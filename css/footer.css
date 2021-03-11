@@ -1,0 +1,64 @@
+/* For Footer */
+.footer {
+    background-color: lavenderblush;
+    background-size: fill;
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+    border: 5px solid #6e7096;
+    border-style: double double double double;
+    padding: 5px;
+    margin: 0px;
+    display: grid;
+    grid-template-areas:
+    "social-icons social-icons social-icons social-icons social-icons"
+    "github linkedin gmail twitter facebook";
+}
+
+
+/* social links */
+#social-icons {
+    grid-area: social-icons;
+    background-color: #b5b3c2;
+    opacity: 1;
+    border: 3px double white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#linkedin{
+    grid-area: linkedin;
+    padding: 2px;
+}
+
+#github{
+    grid-area: github;
+    padding: 2px;
+}
+
+#gmail{
+    grid-area: gmail;
+    padding: 2px;
+}
+
+#twitter{
+    grid-area: twitter;
+    padding: 2px;
+}
+
+#facebook{
+    grid-area: facebook;
+    padding: 2px;
+}
+
+#copyright{
+    color: #6e7096;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.tou:link, a.tou:visited{
+    color: #6e7096;
+    text-decoration: none;
+}

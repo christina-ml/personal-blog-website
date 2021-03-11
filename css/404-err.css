@@ -1,0 +1,31 @@
+body{
+    background-color: lavenderblush;
+}
+
+.container{
+    border: 4px double black;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+}
+
+h1{
+    font-weight: 700;
+}
+
+#oops-character{
+    width: 200px;
+    height: auto;
+    padding: 5px;
+}
+
+#back-to-page{
+    color: white;
+    text-decoration: none;
+    border: 4px solid white;
+    background-color: #b5b3c2;
+    border-style: double;
+    border-radius: 5px;
+    padding: 10px;
+}

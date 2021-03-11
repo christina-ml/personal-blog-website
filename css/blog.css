@@ -1,0 +1,1012 @@
+/* adding stylesheets to the main css file for blog page */
+@import "nav.css";
+@import "footer.css";
+
+/* Small Screens */
+@media (max-width: 599px){
+    .container {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-areas:
+        "hd"
+        "sd"
+        "cont";
+    }
+
+    .header {
+        color: #6e7096;
+        background-color: lavenderblush;
+        border: 5px solid #6e7096;
+        border-style: none double double double;
+        text-align: center;
+        grid-area: hd;
+    }
+
+    .sidebar{
+        width: fit-content;
+        text-align: left;
+        grid-area: sd;
+        background-image: url("images/pattern/knit-texture-pink.jpg");
+    }
+
+    .mephoto{
+        margin-left: auto;
+        margin-right: auto;
+        height: 130px;
+        width: 130px;
+        background-size: contain;
+        background-position: center;
+        border-radius: 50%;
+        background-image: url("images/christina.jpg");
+    }
+
+    .author-info{
+        text-align: center;
+        background-color: lavenderblush;
+        padding: 15px;
+        margin: 20px;
+        border-radius: 50px;
+        border: solid 10px #6e7096;
+        box-shadow: 10px 10px 5px #5c3a51;
+    }
+
+
+    /* social count likes */
+    #likes{
+        display: grid;
+        justify-content: center; 
+        grid-template-areas:
+        "count count-num";
+    }
+
+    #social-count{
+        grid-area: count;
+        margin-right: 5px;
+    }
+
+    #social-count-num{
+        grid-area: count-num;
+    }
+
+
+    /* bio section */
+    .bio{
+        background-color: lavenderblush;
+        padding: 15px;
+        margin: 15px;
+        border: double 10px #6e7096;
+        box-shadow: 10px 10px 5px #5c3a51;
+    }
+
+    .latest-posts{
+        font-family: cursive;
+        border: 4px double white;
+        background-color: #e1e3f9;
+        padding: 10px;
+        text-align: right;
+    }
+
+    .content-box {
+        grid-area: cont;
+        background-color: #ecf3fa;
+        display: grid;
+        grid-gap: 6px;    
+    }
+
+    .content-box {
+        grid-area: cont;
+        background-color: white;
+        display: grid;
+        grid-gap: 6px;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; 
+        grid-template-areas:
+        "card-1"
+        "card-2";
+    }
+
+
+    /* Blog post 1 starts here */
+    .post-card-1{
+        background-color: #ecf3fa;
+        object-fit: contain;
+        grid-area: card-1;
+    }
+
+    .mobile-area-hat{
+        display: grid;
+        justify-content: center; 
+        grid-template-areas:
+        "hat-pic-row hat-cap-row";
+    }
+
+
+    /* katie's kep photos */
+    .hat-pic-row{
+        grid-area: hat-pic-row;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "hat-1"
+        "hat-2"
+        "hat-3";
+    }
+
+    #hat-pic-1{
+        margin-bottom: 5px;
+        margin-left: 5%;
+        width: 150px;
+        object-fit: contain;
+        grid-area: hat-1;
+    }
+
+    #hat-pic-2{
+        margin-bottom: 5px;
+        margin-left: 5%;
+        width: 150px;
+        object-fit: contain;
+        grid-area: hat-2;
+    }
+
+    #hat-pic-3{
+        margin-bottom: 5px;
+        margin-left: 5%;
+        width: 150px;
+        object-fit: contain;
+        grid-area: hat-3;
+    }
+
+    .hat-captions{
+        grid-area: hat-cap-row;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "hat-1-cap"
+        "hat-2-cap"
+        "hat-3-cap";
+    }
+
+    #hat-cap-1{
+        text-align: left;
+        margin-top: 20%;
+        margin-left: 8%;
+        grid-area: hat-1-cap;
+    }
+
+    #hat-cap-2{
+        text-align: left;
+        margin-top: 20%;
+        margin-left: 8%;
+        grid-area: hat-2-cap;
+    }
+
+    #hat-cap-3{
+        text-align: left;
+        margin-top: 20%;
+        margin-left: 8%;
+        grid-area: hat-3-cap;
+    }
+
+
+    /* Blog post 2 starts here */
+    .card-info{
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .blog-header-title{
+        font-family: cursive;
+        line-height: 0.5em;
+        padding: 5px;
+        background-color: #d3e1ee;
+    }
+
+    .post-card-2{
+        background-color: #ecf3fa;
+        object-fit: contain;
+        grid-area: card-2;
+    }
+
+    .mobile-area-tea{
+        display: grid;
+        justify-content: center; 
+        grid-template-areas:
+        "tea-pic-row tea-cap-row";
+    }
+
+
+    /* katie's kep photos */
+    .tea-pic-row{
+        grid-area: tea-pic-row;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "tea-1"
+        "tea-2"
+        "tea-3";
+    }
+
+    #tea-pic-1{
+        margin-bottom: 5px;
+        margin-left: 5%;
+        width: 150px;
+        object-fit: contain;
+        grid-area: tea-1;
+    }
+
+    #tea-pic-2{
+        margin-bottom: 5px;
+        margin-left: 5%;
+        width: 150px;
+        object-fit: contain;
+        grid-area: tea-2;
+    }
+
+    #tea-pic-3{
+        margin-bottom: 5px;
+        margin-left: 5%;
+        width: 150px;
+        object-fit: contain;
+        grid-area: tea-3;
+    }
+
+    .tea-captions{
+        grid-area: tea-cap-row;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "tea-1-cap"
+        "tea-2-cap"
+        "tea-3-cap";
+    }
+
+    #tea-cap-1{
+        text-align: left;
+        margin-top: 20%;
+        margin-left: 8%;
+        grid-area: tea-1-cap;
+    }
+
+    #tea-cap-2{
+        text-align: left;
+        margin-top: 20%;
+        margin-left: 8%;
+        grid-area: tea-2-cap;
+    }
+
+    #tea-cap-3{
+        text-align: left;
+        margin-top: 20%;
+        margin-left: 8%;
+        grid-area: tea-3-cap;
+    }
+
+
+    /* More posts - knitting projects section */
+    .knit-photo-display{
+        padding-top: 15px;
+    }
+
+    .knitting {
+        background-color: #e1e3f9;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 160px 160px;
+        grid-gap: 20px;
+        grid-template-areas:
+        "knit-title knit-title"
+        "shawl hat"
+        "mitt scarf";
+    }
+
+        #knitting-title{
+        background-color: #b5b3c2;
+        padding: 2px;
+        text-align: center;
+        font-family: cursive;
+        grid-area: knit-title;
+    }
+
+    .yarn-photo-box {
+        padding: 5px;
+        box-shadow: 5px 5px 5px #320942a1;
+        background-color: rgb(202, 169, 201);
+        border-radius: 10px;
+    }
+
+    #one {
+        grid-area: scarf; 
+        background-image: url('images/knitting/close-to-you-scarf.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+    }
+
+    #two {
+        grid-area: hat;
+        background-image: url('images/knitting/jutland-hat.jpg');
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+    }
+
+    #three {
+        grid-area: shawl;
+        background-image: url('images/knitting/pointed-firs-shawl.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+    }
+
+    #four {
+        grid-area: mitt;
+        background-image: url('images/knitting/handful-of-berries-mittens.jpg');
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center;
+        text-align: center;
+        color: navy;
+    }
+
+
+    /* Article section - what is knitting? */
+    article{
+        background-color: white;
+        padding: 15px;
+    }
+
+    #what-is-knitting{
+        background-color: lavenderblush;
+        color: hotpink;
+        padding: 18px;
+        border-radius: 50px;
+        border: 4px double hotpink;
+        text-align: center;
+    }
+}
+
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 900px){
+    .container {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-areas:
+        "hd"
+        "sd"
+        "cont";
+    }
+
+    .header {
+        color:#6e7096;
+        background-color: lavenderblush;
+        border: 5px solid #6e7096;
+        border-style: none double double double;
+        text-align: center;
+        grid-area: hd;
+    }
+
+    .sidebar{
+        text-align: left;
+        grid-area: sd;
+        background-image: url("images/pattern/knit-texture-pink.jpg");
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mephoto{
+        margin-left: auto;
+        margin-right: auto;
+        height: 130px;
+        width: 130px;
+        background-size: contain;
+        background-position: center;
+        border-radius: 50%;
+        background-image: url("images/christina.jpg");
+    }
+
+    .author-info{
+        text-align: center;
+        background-color: lavenderblush;
+        padding: 15px;
+        margin: 20px;
+        border-radius: 50px;
+        border: solid 10px #6e7096;
+        box-shadow: 10px 10px 5px #5c3a51;
+    }
+
+
+    /* social count likes */
+    #likes{
+        display: grid;
+        justify-content: center; 
+        grid-template-areas:
+        "count count-num";
+    }
+
+    #social-count{
+        grid-area: count;
+        margin-right: 5px;
+    }
+
+    #social-count-num{
+        grid-area: count-num;
+    }
+
+
+    /* bio section */
+    .bio{
+        width: 50%;
+        background-color: lavenderblush;
+        padding: 15px;
+        margin: 15px;
+        border: double 10px #6e7096;
+        box-shadow: 10px 10px 5px #5c3a51;
+    } 
+
+    .latest-posts{
+        font-family: cursive;
+        border: 4px double white;
+        background-color: #e1e3f9;
+        padding: 10px;
+        text-align: right;
+    }
+
+
+    /* Blog Posts section begins here */
+    .content-box {
+        grid-area: cont;
+        background-color: white;
+        display: grid;
+        grid-gap: 10px;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; 
+        grid-template-areas:
+        "card-1"
+        "card-2";
+    }
+
+
+    /* blog post 1 */
+    .post-card-1{
+        background-color: #ecf3fa;
+        object-fit: contain;
+        grid-area: card-1;
+    }
+
+
+    /* katie's kep photos */
+    .hat-pic-row{
+        grid-area: pic-row;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #hat-pic-1{
+        width: 150px;
+        object-fit: contain;
+        grid-area: hat-1;
+    }
+
+    #hat-pic-2{
+        width: 150px;
+        object-fit: contain;
+        grid-area: hat-2;
+    }
+
+    #hat-pic-3{
+        width: 150px;
+        object-fit: contain;
+        grid-area: hat-3;
+    }
+
+    .hat-captions{
+        grid-area: cap-row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "hat-1-cap hat-2-cap hat-3-cap";
+    }
+
+    #hat-cap-1{
+        text-align: center;
+        grid-area: hat-1-cap;
+    }
+
+    #hat-cap-2{
+        text-align: center;
+        grid-area: hat-2-cap;
+    } 
+
+    #hat-cap-3{
+        text-align: center;
+        grid-area: hat-3-cap;
+    }
+
+
+    /* blog post 2 */
+    .post-card-2{
+        background-color: #ecf3fa;
+        grid-area: card-2;
+    }
+
+    .post-2-images{
+        text-align: center;
+    }
+
+    .card-info{
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .blog-header-title{
+        font-family: cursive;
+        line-height: 0.5em;
+        padding: 5px;
+        background-color: #d3e1ee;
+    }
+
+
+    /* tea photos */
+    .tea-pic-row{
+        grid-area: tea-pic-row;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #tea-pic-1{
+        width:150px;
+        object-fit: contain;
+        grid-area: tea-1;
+    }
+
+    #tea-pic-2{
+        width: 150px;
+        object-fit: contain;
+        grid-area: tea-2;
+    }
+
+    #tea-pic-3{
+        width: 150px;
+        object-fit: contain;
+        grid-area: tea-3;
+    }
+
+    .tea-captions{
+        grid-area: cap-row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "tea-1-cap tea-2-cap tea-3-cap";
+    }
+
+    #tea-cap-1{
+        text-align: center;
+        grid-area: tea-1-cap;
+    }
+
+    #tea-cap-2{
+        text-align: center;
+        grid-area: tea-2-cap;
+    } 
+
+    #tea-cap-3{
+        text-align: center;
+        grid-area: tea-3-cap;
+    }
+
+
+    /* More posts - knitting projects section */
+    .knit-photo-display{
+        padding-top: 15px;
+    }
+
+    .knitting {
+        background-color: #e1e3f9;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 260px 260px;
+        grid-gap: 20px;
+        grid-template-areas:
+        "knit-title knit-title"
+        "shawl hat"
+        "mitt scarf";
+    }
+
+    #knitting-title{
+        background-color: #b5b3c2;
+        padding: 2px;
+        /* margin:2px; */
+        text-align: center;
+        font-family: cursive;
+        grid-area: knit-title;
+    }
+
+    .yarn-photo-box {
+        padding: 5px;
+        box-shadow: 5px 5px 5px #320942a1;
+        background-color: rgb(202, 169, 201);
+        border-radius: 10px;
+    }
+
+    #one {
+        grid-area: scarf; 
+        background-image: url('images/knitting/close-to-you-scarf.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+    }
+
+    #two {
+        grid-area: hat;
+        background-image: url('images/knitting/jutland-hat.jpg');
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+    }
+
+    #three {
+        grid-area: shawl;
+        background-image: url('images/knitting/pointed-firs-shawl.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+    }
+
+    #four {
+        grid-area: mitt;
+        background-image: url('images/knitting/handful-of-berries-mittens.jpg');
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center;
+        text-align: center;
+        color: navy;
+    }
+
+
+    /* Article section - what is knitting? */
+    article{
+        background-color: white;
+        padding: 15px;
+    }
+
+    #what-is-knitting{
+        background-color: lavenderblush;
+        color: hotpink;
+        padding: 18px;
+        border-radius: 50px;
+        border: 4px double hotpink;
+        text-align: center;
+    }
+}
+
+
+/* Large Screens */
+@media (min-width:901px) {
+    .container {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-areas:
+        "hd"
+        "sd"
+        "cont";
+    }
+
+    .header {
+        color:#6e7096;
+        background-color: lavenderblush;
+        border: 5px solid #6e7096;
+        border-style: none double double double;
+        text-align: center;
+        grid-area: hd;
+    }
+
+    .sidebar{
+        text-align: left;
+        grid-area: sd;
+        background-image: url("images/pattern/knit-texture-pink.jpg");
+        display: flex;
+    }
+
+    .mephoto{
+        margin-left: auto;
+        margin-right: auto;
+        height: 130px;
+        width: 130px;
+        background-size: contain;
+        background-position: center;
+        border-radius: 50%;
+        background-image: url("images/christina.jpg");
+    }
+
+    .author-info{
+        text-align: center;
+        background-color: lavenderblush;
+        padding: 15px;
+        margin: 20px;
+        border-radius: 50px;
+        border: solid 10px #6e7096;
+        box-shadow: 10px 10px 5px #5c3a51;
+    }
+
+
+    /* social count likes */
+    #likes{
+        display: grid;
+        justify-content: center; 
+        grid-template-areas:
+        "count count-num";
+    }
+
+    #social-count{
+        grid-area: count;
+        margin-right: 5px;
+    }
+
+    #social-count-num{
+        grid-area: count-num;
+    }
+
+
+    /* bio section */
+    .bio{
+        width: 50%;
+        background-color: lavenderblush;
+        padding: 15px;
+        margin: 15px;
+        border: double 10px #6e7096;
+        box-shadow: 10px 10px 5px #5c3a51;
+    }
+
+    .latest-posts{
+        font-family: cursive;
+        border: 4px double white;
+        background-color: #e1e3f9;
+        padding: 10px;
+        text-align: right;
+    }
+
+
+    /* Blog Posts section begins here */
+    .content-box {
+        grid-area: cont;
+        background-color: white;
+        display: grid;
+        grid-gap: 10px;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; 
+        grid-template-areas:
+        "card-1"
+        "card-2";
+    }
+
+
+    /* blog post 1 */
+    .post-card-1{
+        background-color: #ecf3fA;
+        object-fit: contain;
+        grid-area: card-1;
+    }
+
+
+    /* katie's kep photos */
+    .hat-pic-row{
+        grid-area: hat-pic-row;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #hat-pic-1{
+        width: 150px;
+        object-fit: contain;
+        grid-area: hat-1;
+    }
+
+    #hat-pic-2{
+        width: 150px;
+        object-fit: contain;
+        grid-area: hat-2;
+    }
+
+    #hat-pic-3{
+        width: 150px;
+        object-fit: contain;
+        grid-area: hat-3;
+    }
+
+    .hat-captions{
+        grid-area: hat-cap-row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "hat-1-cap hat-2-cap hat-3-cap";
+    }
+
+    #hat-cap-1{
+        text-align: center;
+        grid-area: hat-1-cap;
+    }
+
+    #hat-cap-2{
+        text-align: center;
+        grid-area: hat-2-cap;
+    } 
+
+    #hat-cap-3{
+        text-align: center;
+        grid-area: hat-3-cap;
+    }
+
+
+    /* blog post 2 */
+    .card-info{
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .blog-header-title{
+        font-family: cursive;
+        line-height: 0.5em;
+        padding: 5px;
+        background-color: #d3e1ee;
+    }
+
+    .post-card-2{
+        background-color: #ecf3fa;
+        object-fit: contain;
+        grid-area: card-2;
+    }
+
+
+    /* katie's kep photos */
+    .tea-pic-row{
+        grid-area: tea-pic-row;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #tea-pic-1{
+        width: 150px;
+        object-fit: contain;
+        grid-area: tea-1;
+    }
+    
+    #tea-pic-2{
+        width: 150px;
+        object-fit: contain;
+        grid-area: tea-2;
+    }
+
+    #tea-pic-3{
+        width: 150px;
+        object-fit: contain;
+        grid-area: tea-3;
+    }
+
+    .tea-captions{
+        grid-area:tea-cap-row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "tea-1-cap tea-2-cap tea-3-cap";
+    }
+
+    #tea-cap-1{
+        text-align: center;
+        grid-area: tea-1-cap;
+    }
+
+    #tea-cap-2{
+        text-align: center;
+        grid-area: tea-2-cap;
+    } 
+
+    #tea-cap-3{
+        text-align: center;
+        grid-area: tea-3-cap;
+    }
+
+
+    /* More posts - knitting projects section */
+    .knit-photo-display{
+        padding-top: 15px;
+    }
+
+    .knitting {
+        background-color: #e1e3f9;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 350px 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas:
+        "knit-title knit-title knit-title knit-title"
+        "shawl hat mitt scarf";
+    }
+
+    #knitting-title{
+        background-color: #b5b3c2;
+        padding: 2px;
+        text-align: center;
+        font-family: cursive;
+        grid-area: knit-title;
+    }
+
+    .yarn-photo-box {
+        padding: 5px;
+        box-shadow: 5px 5px 5px #320942a1;
+        background-color: rgb(202, 169, 201);
+        border-radius: 10px;
+    }
+
+    #one {
+        grid-area: scarf; 
+        background-image: url('images/knitting/close-to-you-scarf.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+    }
+
+    #two {
+        grid-area: hat;
+        background-image: url('images/knitting/jutland-hat.jpg');
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+    }
+
+    #three {
+        grid-area: shawl;
+        background-image: url('images/knitting/pointed-firs-shawl.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+    }
+
+    #four {
+        grid-area: mitt;
+        background-image: url('images/knitting/handful-of-berries-mittens.jpg');
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center;
+        text-align: center;
+        color: navy;
+    }
+
+
+    /* Article section - what is knitting? */
+    article{
+        background-color: white;
+        padding: 15px;
+    }
+    
+    #what-is-knitting{
+        background-color: lavenderblush;
+        color: hotpink;
+        padding: 18px;
+        border-radius: 50px;
+        border: 4px double hotpink;
+        text-align: center;
+        column-count: 2;
+    }
+}

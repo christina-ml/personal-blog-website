@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Christina's Personal Blog Website</title>
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta name="description" content="Udacity Personal Blog Website project">
+        <meta name="keywords" content="HTML,CSS">
+        <meta name="author" content="Christina Loiacono">
+        <!-- stylesheet linked -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <header>
+            <div class="navbar">
+                <div id="logo-icons">
+                    <a class="nav-logo" href="index.html"></a>
+                </div>
+                <div class="home bar" id="home">
+                    <a class="nav-link" href="index.html">Home</a>
+                </div>
+                <div class="blog bar" id="blog">
+                    <a class="nav-link" href="post.html">Blog</a>
+                </div>
+            </div>
+        </header>
+        <!-- Page Content Start -->
+        <div class = "container">
+            <!-- Header -->
+            <div class="header box"><h1>The Knitting Blog</h1></div>
+            <!-- Sidebar -->
+            <div class="sidebar box">
+                <div class="greeting-info">
+                    <h2>Welcome!</h2>
+                    <h3>The Knitting Blog!</h3>
+                    <p>
+                        <em>Projects & Things</em><br/><br/>
+                        <!-- Subscribe button -->
+                        <u>Subscribe Here</u>:<br/>
+                        <div class="subscribe-btn">
+                            <input type="text" placeholder="Email address" name="mail" required>
+                            <a class="form-link" href="404-not-found.html">Submit</a>
+                        </div> 
+                    </p>
+                </div>
+                <!-- blog post list in sidebar -->
+                <div class="blog-list">
+                    <p><h4 id="recent-title">Recent Posts</h4>
+                        <h3>Shetland Wool Week - Katie's Kep</h3>
+                        March 7, 2021:
+                        <ul>
+                            <li>Katie's Kep</li>
+                            <li>Jutland Hat</li>
+                            <li>Handful of Berries Mittens</li>
+                            <li>Anne's Blank Canvas Sock</li>
+                        </ul>
+                    </p>
+                    <p><b>This is a regular sentence to read
+                        if you don't want to read lorem ipsum.</b>Vulputate enim nulla aliquet porttitor
+                        lacus luctus. Viverra tellus in hac habitasse platea dictumst.
+                        <a href="post.html">Most Recent Blog Post</a>
+                        Sem fringilla ut morbi tincidunt augue interdum velit euismod.
+                    </p>
+                </div>
+            </div>
+            <!-- Content about Katie's Kep Hat -->
+            <div class="content box">
+                <p>
+                    I like to knit, and have a knitting Zoom call once a week with my aunts.
+                    So far, we've knit a lot during the COVID-19 pandemic!
+                    There's more projects lined up for the future: Gwytherin Shawl,
+                    Powder Wrap shawl, and more!
+                </p>
+                <div class="card">
+                    <!-- Blog Post 1 -->
+                    <div class="card-1">
+                        <div class="blog-announcement">
+                            <div class="title-photo">
+                                <p>
+                                    <b>Monday</b><br/>
+                                    <b>March 8, 2021</b>
+                                </p>
+                            </div>
+                                <h2>Katie's Kep</h2>
+                        </div>
+                        <img src="css/images/knitting/katies-kep.jpg" id="hat-pic" alt="katies kep">
+                        <figcaption id="kep-one">Katie's Kep hat</figcaption>
+                        <br/>
+                        <a href="post.html">Read More</a>
+                    </div>
+                    <!-- Blog Post 2 -->
+                    <div class="card-2">
+                        <div class="blog-announcement">
+                            <div class="title-photo">
+                                <p>
+                                    <b>Tuesday</b><br/>
+                                    <b>March 9, 2021</b>
+                                </p>
+                            </div>
+                                <h2>Tea Mitten</h2>
+                        </div>
+                        <img src="css/images/knitting/tea-mitten-blocked.jpg" id="tea-pic" alt="tea mitten">
+                        <figcaption id="tea-one">Tea Mitten Blocked</figcaption>
+                        <br/>
+                        <a href="post.html">Read More</a>
+                    </div>
+                </div>
+                <p>Oat cake brownie chocolate pudding liquorice. Liquorice cookie
+                bear claw cake <em>chocolate cake</em> (yum!) sugar plum caramels carrot cake.
+                Dessert chocolate bar pudding halvah pie cookie. Oat cake dragée
+                jelly beans. Pastry halvah jujubes lollipop cupcake cake lollipop
+                wafer. Candy sweet roll bear claw. Marzipan halvah tart. Gummi bears
+                marzipan <u>gummi bears</u> (must have) lollipop jelly-o.
+                A quote from Wikipedia's website:
+                <blockquote cite="https://en.wikipedia.org/wiki/Knitting">
+                    <em>"Knitting is a method by which yarn is manipulated to create
+                    a textile or fabric; it is used in many types of garments.
+                    Knitting may be done by hand or by machine."</em><b> - Wikipedia</b>
+                </blockquote>
+                Jelly beans wafer tart cake caramels dessert ice cream chocolate
+                bar. Marshmallow pastry icing chocolate cake donut macaroon
+                caramels. Caramels chocolate bar cake caramels jelly-o. Jujubes
+                cake dragée lollipop dessert brownie oat cake. Powder marshmallow
+                bear claw pie gummies icing brownie cupcake. Lollipop caramels candy
+                carrot cake. Sweet donut cake wafer croissant dragée. Marshmallow
+                candy canes carrot cake cotton candy jujubes halvah marzipan tootsie roll.
+                </p>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div id="social-icons">Stay Connected:</div>
+                <div class="li bar" id="linkedin">
+                    <a class="foot-link" href="https://www.linkedin.com/in/christina-loiacono/" target="_blank">
+                        <img src="css/images/social-icons/linkedin-b.png" alt="linkedin icon" style="width:30px;height:30px;">
+                    </a>
+                </div>
+                <div class="git bar" id="github">
+                    <a class="foot-link" href="https://github.com/christina-ml" target="_blank">
+                        <img src="css/images/social-icons/github-b.png" alt="github icon" style="width:30px;height:30px;">
+                    </a>
+                </div>
+                <div class="email bar" id="gmail">
+                    <a class="foot-link" href="mailto:loiaconochristina@gmail.com" target="_blank">
+                        <img src="css/images/social-icons/email-b.png" alt="gmail icon" style="width:30px;height:30px;">
+                    </a>
+                </div>
+                <div class="twitter bar" id="twitter">
+                    <a class="foot-link" href="https://twitter.com/cmloiacono" target="_blank">
+                        <img src="css/images/social-icons/twitter-b.png" alt="twitter icon" style="width:30px;height:30px;">
+                    </a>
+                </div>
+                <div class="facebook bar" id="facebook">
+                    <a class="foot-link" href="https://www.facebook.com/Udacity/" target="_blank">
+                        <img src="css/images/social-icons/facebook-b.png" alt="facebook icon" style="width:30px;height:30px;">
+                    </a>
+                </div>
+            </div>
+            <div id="copyright">&#169; 2021 Christina Loiacono &#8212;
+                <a class="tou" href="404-not-found.html">Terms of Use</a>
+            </div>
+        </footer>
+    </body>
+</html>
